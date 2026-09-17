@@ -1,3 +1,8 @@
+visit at : https://dns-shield-frontend.vercel.app
+
+frontend : https://dns-shield-frontend.vercel.app/
+backend : https://dns-tunneling-backend.onrender.com
+
 # 🛡️ DNS Shield — DNS Tunneling Detection & Intelligence Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10%20--%203.14-blue.svg)](https://www.python.org/)
