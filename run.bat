@@ -53,7 +53,7 @@ if not exist "%PYTHON_EXE%" (
 if not exist "%FRONTEND_DIR%\node_modules" (
     echo [*] Installing frontend dependencies (npm install)...
     cd /d "%FRONTEND_DIR%"
-    call npm install
+    call npm.cmd install
     cd /d "%ROOT_DIR%"
 )
 
@@ -77,7 +77,7 @@ start "DNS Shield - Backend (FastAPI)" cmd /k "cd /d ""%BACKEND_DIR%"" && set PY
 :: 6. Start Frontend Server (Vite on port 5173)
 :: -------------------------------------------------------------------------
 echo [*] Launching Frontend UI on http://localhost:5173...
-start "DNS Shield - Frontend (Vite)" cmd /k "cd /d ""%FRONTEND_DIR%"" && npm run dev"
+start "DNS Shield - Frontend (Vite)" cmd /k "cd /d ""%FRONTEND_DIR%"" && npm.cmd run dev"
 
 :: -------------------------------------------------------------------------
 :: 7. Wait briefly and open browser
