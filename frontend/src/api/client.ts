@@ -1,8 +1,6 @@
 import axios from 'axios'
 
-// In production (Vercel), VITE_API_URL is set to the deployed backend URL.
-// In local dev it falls back to localhost:8000.
-const API_BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:8000/api'
+const API_BASE = import.meta.env.VITE_API_URL || (window.location.hostname === 'localhost' ? 'http://localhost:8000/api' : 'https://dns-tunneling-backend.onrender.com/api')
 
 const api = axios.create({
   baseURL: API_BASE,
