@@ -8,7 +8,7 @@ import clsx from 'clsx'
 
 import Dashboard from './pages/Dashboard'
 import Analyze from './pages/Analyze'
-import Chat from './pages/Chat'
+
 import HistoryPage from './pages/HistoryPage'
 import SettingsPage from './pages/Settings'
 
@@ -17,7 +17,7 @@ import { useThemeStore } from './store/themeStore'
 const NAV_ITEMS = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/analyze', icon: Search, label: 'Analyze' },
-  { to: '/chat', icon: MessageSquare, label: 'AI Chat' },
+
   { to: '/history', icon: History, label: 'History' },
   { to: '/settings', icon: Settings, label: 'Settings' },
 ]
@@ -121,7 +121,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/analyze" element={<Analyze />} />
-          <Route path="/chat" element={<Chat />} />
+
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
